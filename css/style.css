@@ -1,9 +1,130 @@
+/* Steve's code from in-class review 6/6/2019 */
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 50px 1fr repeat(4, 200px) 1fr repeat(4, 200px) 1fr 400px; 
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "nav"
+        "feature1"
+        "smalls11"
+        "smalls12"
+        "smalls13"
+        "smalls14"
+        "feature2"
+        "smalls21"
+        "smalls22"
+        "smalls23"
+        "smalls24"
+        "feature3"
+        "footer";
+    }
+
+nav {
+    grid-area: nav;
+    background-color: gray;
+}
+
+#feature1 {
+    grid-area: feature1;
+}
+img {
+    max-width: 100%; 
+}
+div {
+
+    background-color: red;
+}
+#small11 {
+    grid-area: smalls11;
+}
+
+#small12 {
+    grid-area: smalls12;
+}
+
+#small13 {
+    grid-area: smalls13;
+}
+
+#small14 {
+    grid-area: smalls14;
+}
+
+#feature2 {
+    grid-area: feature2;
+}
+
+#small21 {
+    grid-area: smalls21;
+}
+
+#small22 {
+    grid-area: smalls22;
+}
+
+#small23 {
+    grid-area: smalls23;
+}
+
+#small24 {
+    grid-area: smalls24;
+}
+
+#feature3 {
+    grid-area: feature3;
+}
+
+footer {
+    grid-area: footer;
+}
+
+@media screen and (min-width: 550px) and (max-width: 1100px) {
+    body {
+        grid-template-rows: 50px 1fr repeat(2, 200px) 1fr repeat(2, 200px) 1fr 400px; 
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "nav nav"
+            "feature1 feature1"
+            "smalls11 smalls12"
+            "smalls13 smalls14"
+            "feature2 feature2"
+            "smalls21 smalls22"
+            "smalls23 smalls24"
+            "feature3 feature3"
+            "footer footer";
+
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    body {
+        grid-template-rows: 50px 1fr 200px 1fr 200px 1fr 400px; 
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+            "nav nav nav nav"
+            "feature1 feature1 feature1 feature1"
+            "smalls11 smalls12 smalls13 smalls14"
+            "feature2 feature2 feature2 feature2"
+            "smalls21 smalls22 smalls23 smalls24"
+            "feature3 feature3 feature3 feature3"
+            "footer footer footer footer";
+    }
+}
+
+/* Nathan's Code as of 6/5/2019 - I was missing the grid-template-area
+
 html, body {
     margin: 0;
 }
 
 p {
-    /* margin: 50px auto;  */
+    margin: 50px auto; 
     text-align: left;
 
 }
@@ -12,9 +133,9 @@ div {
     background-color: #999999;
     padding: 50px;
     margin: 50px auto;
-    /* width: 400px; */
+    width: 400px;
     border: 1px solid black;
-    /* text-align: left; */
+    text-align: left;
     width: 50%; 
 }
 
@@ -44,10 +165,11 @@ body {
 }
 
 img {
-    /* width: 100vw; */
+    width: 100vw;
 }
 
 #header {
+    grid-area: header - need to define grid-area
     background-color: gray;
     width: 100vw;
 }
@@ -78,13 +200,6 @@ img {
 
 }
 
-/* #jumbo2 {
-
-}
-
-#jumbotext2 {
-
-} */
 
 #five {
 
@@ -102,13 +217,6 @@ img {
 
 }
 
-/* #jumbo3 {
-
-}
-
-#jumbotext3 {
-
-} */
 
 #socialmedia {
     background-color: tan;
@@ -138,7 +246,7 @@ img {
     }
     img {
         margin: 0 auto;
-        /* width: 150px;  */
+        width: 150px; 
     }
   }
 
@@ -161,6 +269,6 @@ img {
     }
     img {
         margin: 0 auto;
-        /* width: 150px;  */
+        width: 150px; 
     }
-  }
+  } */
