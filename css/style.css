@@ -1,6 +1,6 @@
 /* Steve's code from in-class review 6/6/2019 */
 
-html, body {
+/* html, body {
     margin: 0;
     padding: 0;
 }
@@ -115,160 +115,168 @@ footer {
             "feature3 feature3 feature3 feature3"
             "footer footer footer footer";
     }
-}
+} */
 
-/* Nathan's Code as of 6/5/2019 - I was missing the grid-template-area
+/* Nathan's Code as of 6/5/2019 - I was missing the grid-template-area */
 
 html, body {
     margin: 0;
 }
 
-p {
-    margin: 50px auto; 
-    text-align: left;
-
-}
-
 div {
     background-color: #999999;
-    padding: 50px;
-    margin: 50px auto;
-    width: 400px;
-    border: 1px solid black;
-    text-align: left;
-    width: 50%; 
 }
 
 body {
-    min-height: 100vh;
-    margin: 0;
     display: grid;
-    grid-template-rows: .3fr .4fr .4fr .2fr .2fr .2fr .2fr .4fr .4fr .2fr .2fr .2fr .2fr .4fr .4fr .2fr 1fr;
+    grid-template-rows: 150px 1fr 1fr repeat(4, 200px) 1fr 1fr repeat(4,200px) 1fr 1fr 150px 400px;
     grid-template-columns: 1fr;
     grid-template-areas: "header"
-                        "jumbo"
-                        "jumbotext"
+                        "jumbo1"
+                        "jumbotext1"
                         "one"
                         "two"
                         "three"
                         "four"
-                        "jumbo"
-                        "jumbotext"
+                        "jumbo2"
+                        "jumbotext2"
                         "five"
                         "six"
                         "seven"
                         "eight"
-                        "jumbo"
-                        "jumbotext"
+                        "jumbo3"
+                        "jumbotext3"
                         "socialmedia"
-                        "footer"
+                        "footer";
 }
 
 img {
-    width: 100vw;
+    max-width: 100%;
 }
 
 #header {
-    grid-area: header - need to define grid-area
+    /* grid-area: header - need to define grid-area */
+    
+    grid-area: header;
     background-color: gray;
     width: 100vw;
 }
 
-#jumbo {
+#jumbo1 {
+    grid-area: jumbo1;
     background-color: #333333;
-    padding: 50px;
-}
-
-#jumbotext {
-    background-color: ivory;
-    padding: 50px 150px;
-}
-
-#one {
     
 }
 
-#two {
+#jumbotext1 {
+    grid-area: jumbotext1;
+    background-color: ivory;
+    
+}
 
+#one {
+    grid-area: one;
+}
+
+#two {
+    grid-area: two;
 }
 
 #three {
-
+    grid-area: three;
 }
 
 #four {
-
+    grid-area: four;
 }
 
+#jumbo2 {
+    grid-area: jumbo2;
+    background-color: #333333;
+    
+}
+
+#jumbotext2 {
+    grid-area: jumbotext2;
+    background-color: ivory;
+    
+}
 
 #five {
-
+    grid-area: five;
 }
 
 #six {
-
+    grid-area: six;
 }
 
 #seven {
-
+    grid-area: seven;
 }
 
 #eight {
+    grid-area: eight;
+}
 
+#jumbo3 {
+    grid-area: jumbo3;
+    background-color: #333333;
+    
+}
+
+#jumbotext3 {
+    grid-area: jumbotext3;
+    background-color: ivory;
+    
 }
 
 
 #socialmedia {
+    grid-area: socialmedia;
     background-color: tan;
 }
 
 #footer {
+    grid-area: footer;
     background-color: gray;
 }
 
 @media screen and (min-width: 550px) and (max-width: 1100px) {
     body {
-      grid-template-rows: .3fr .4fr .4fr .2fr .2fr .4fr .4fr .2fr .2fr .4fr .4fr .2fr 1fr;
+      grid-template-rows: 150px 1fr repeat(2, 200px) 1fr repeat(2,200px) 1fr 150px 400px;
       grid-template-columns: 1fr 1fr;
       grid-template-areas: "header header"
-                           "jumbo jumbo"
-                           "jumbotext jumbotext"
+                           "jumbo1 jumbotext1"
                            "one two"
                            "three four"
-                           "jumbo jumbo"
-                           "jumbotext jumbotext"
+                           "jumbo2 jumbotext2"
                            "five six"
                            "seven eight"
-                           "jumbo jumbo"
-                           "jumbotext jumbotext"
+                           "jumbo3 jumbotext3"
                            "socialmedia socialmedia"
                            "footer footer";
     }
-    img {
-        margin: 0 auto;
-        width: 150px; 
+    div {
+        background-color: #999999;
+        margin: 20px;
     }
-  }
+} 
 
 
   @media screen and (min-width: 1100px) {
     body {
-      grid-template-rows: .3fr .4fr .4fr .2fr .4fr .4fr .2fr .4fr .4fr .2fr 1fr;
-      grid-template-columns: .25fr .25fr .25fr .25fr;
+      grid-template-rows: 150px 1fr 200px 1fr 200px 1fr 150px 400px;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-template-areas: "header header header header"
-                           "jumbo jumbo jumbo jumbo"
-                           "jumbotext jumbotext jumbotext jumbotext"
+                           "jumbo1 jumbo1 jumbotext1 jumbotext1"
                            "one two three four"
-                           "jumbo jumbo jumbo jumbo"
-                           "jumbotext jumbotext jumbotext jumbotext"
+                           "jumbo2 jumbo2 jumbotext2 jumbotext2"
                            "five six seven eight"
-                           "jumbo jumbo jumbo jumbo"
-                           "jumbotext jumbotext jumbotext jumbotext"
+                           "jumbo3 jumbo3 jumbotext3 jumbotext3"
                            "socialmedia socialmedia socialmedia socialmedia"
                            "footer footer footer footer";
     }
-    img {
-        margin: 0 auto;
-        width: 150px; 
+    div {
+        margin: 10px; 
     }
-  } */
+  }
