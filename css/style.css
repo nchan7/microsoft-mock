@@ -1,0 +1,166 @@
+html, body {
+    margin: 0;
+}
+
+p {
+    /* margin: 50px auto;  */
+    text-align: left;
+
+}
+
+div {
+    background-color: #999999;
+    padding: 50px;
+    margin: 50px auto;
+    /* width: 400px; */
+    border: 1px solid black;
+    /* text-align: left; */
+    width: 50%; 
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-rows: .3fr .4fr .4fr .2fr .2fr .2fr .2fr .4fr .4fr .2fr .2fr .2fr .2fr .4fr .4fr .2fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header"
+                        "jumbo"
+                        "jumbotext"
+                        "one"
+                        "two"
+                        "three"
+                        "four"
+                        "jumbo"
+                        "jumbotext"
+                        "five"
+                        "six"
+                        "seven"
+                        "eight"
+                        "jumbo"
+                        "jumbotext"
+                        "socialmedia"
+                        "footer"
+}
+
+img {
+    /* width: 100vw; */
+}
+
+#header {
+    background-color: gray;
+    width: 100vw;
+}
+
+#jumbo {
+    background-color: #333333;
+    padding: 50px;
+}
+
+#jumbotext {
+    background-color: ivory;
+    padding: 50px 150px;
+}
+
+#one {
+    
+}
+
+#two {
+
+}
+
+#three {
+
+}
+
+#four {
+
+}
+
+/* #jumbo2 {
+
+}
+
+#jumbotext2 {
+
+} */
+
+#five {
+
+}
+
+#six {
+
+}
+
+#seven {
+
+}
+
+#eight {
+
+}
+
+/* #jumbo3 {
+
+}
+
+#jumbotext3 {
+
+} */
+
+#socialmedia {
+    background-color: tan;
+}
+
+#footer {
+    background-color: gray;
+}
+
+@media screen and (min-width: 550px) and (max-width: 1100px) {
+    body {
+      grid-template-rows: .3fr .4fr .4fr .2fr .2fr .4fr .4fr .2fr .2fr .4fr .4fr .2fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "header header"
+                           "jumbo jumbo"
+                           "jumbotext jumbotext"
+                           "one two"
+                           "three four"
+                           "jumbo jumbo"
+                           "jumbotext jumbotext"
+                           "five six"
+                           "seven eight"
+                           "jumbo jumbo"
+                           "jumbotext jumbotext"
+                           "socialmedia socialmedia"
+                           "footer footer";
+    }
+    img {
+        margin: 0 auto;
+        /* width: 150px;  */
+    }
+  }
+
+
+  @media screen and (min-width: 1100px) {
+    body {
+      grid-template-rows: .3fr .4fr .4fr .2fr .4fr .4fr .2fr .4fr .4fr .2fr 1fr;
+      grid-template-columns: .25fr .25fr .25fr .25fr;
+      grid-template-areas: "header header header header"
+                           "jumbo jumbo jumbo jumbo"
+                           "jumbotext jumbotext jumbotext jumbotext"
+                           "one two three four"
+                           "jumbo jumbo jumbo jumbo"
+                           "jumbotext jumbotext jumbotext jumbotext"
+                           "five six seven eight"
+                           "jumbo jumbo jumbo jumbo"
+                           "jumbotext jumbotext jumbotext jumbotext"
+                           "socialmedia socialmedia socialmedia socialmedia"
+                           "footer footer footer footer";
+    }
+    img {
+        margin: 0 auto;
+        /* width: 150px;  */
+    }
+  }
